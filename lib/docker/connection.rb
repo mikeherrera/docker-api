@@ -29,6 +29,8 @@ class Docker::Connection
   # The actual client that sends HTTP methods to the Docker server. This value
   # is not cached, since doing so may cause socket errors after bad requests.
   def resource
+    p url
+    p options
     Excon.new(url, options)
   end
   private :resource
