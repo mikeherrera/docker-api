@@ -31,7 +31,7 @@ class Docker::Connection
   def resource
     Excon.new(url, options)
   end
-  private :resource
+  #private :resource
 
   # Send a request to the server with the `
   def request(*args, &block)
